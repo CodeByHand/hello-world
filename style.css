@@ -1,0 +1,397 @@
+/* ============================================================================
+   SQUARESPACE JANITORIAL WEBSITE - CUSTOM STYLES
+   ============================================================================
+
+   Table of Contents:
+   1. CSS Custom Properties
+   2. Font Faces
+   3. Performance Optimizations
+   4. Base & Reset Styles
+   5. Layout Components
+   6. Navigation
+   7. Typography
+   8. Buttons & CTAs
+   9. Product Components
+   10. Summary Blocks
+   11. Page-Specific Styles
+       - Home Page
+       - About Us Page
+       - Product Pages
+   12. Footer
+   13. Utilities
+   14. Media Queries
+
+   ============================================================================ */
+
+
+/* ============================================================================
+   1. CSS CUSTOM PROPERTIES
+   ============================================================================ */
+
+:root {
+  --bhj-tab-bg: #778899;
+  --bhj-tab-text: #ffffff;
+}
+
+
+/* ============================================================================
+   2. FONT FACES
+   ============================================================================ */
+
+/* PT Serif - Normal 400 */
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ptserif/v18/EJRVQgYoZZY2vCFuvDFR.ttf) format('truetype');
+}
+
+/* PT Serif - Normal 700 */
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/ptserif/v18/EJRSQgYoZZY2vCFuvAnt65qV.ttf) format('truetype');
+}
+
+/* PT Serif - Italic 400 */
+@font-face {
+  font-family: 'PT Serif';
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ptserif/v18/EJRTQgYoZZY2vCFuvAFTzro.ttf) format('truetype');
+}
+
+/* PT Serif - Italic 700 */
+@font-face {
+  font-family: 'PT Serif';
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/ptserif/v18/EJRQQgYoZZY2vCFuvAFT9gaQVy4.ttf) format('truetype');
+}
+
+/* Open Sans - Normal 400 */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0C4n.ttf) format('truetype');
+}
+
+/* Open Sans - Normal 700 */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1y4n.ttf) format('truetype');
+}
+
+/* Open Sans - Italic 400 */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v43/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkaVc.ttf) format('truetype');
+}
+
+/* Open Sans - Italic 700 */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v43/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjaVc.ttf) format('truetype');
+}
+
+/* Squarespace UI Font */
+@font-face {
+  font-family: squarespace-ui-font;
+  src: url('https://assets.squarespace.com/universal/fonts/squarespace-ui-font.eot');
+  src: url('https://assets.squarespace.com/universal/fonts/squarespace-ui-font.eot?#iefix') format('embedded-opentype'),
+       url('https://assets.squarespace.com/universal/fonts/squarespace-ui-font.svg#squarespace-ui-font') format('svg'),
+       url('https://assets.squarespace.com/universal/fonts/squarespace-ui-font.woff') format('woff'),
+       url('https://assets.squarespace.com/universal/fonts/squarespace-ui-font.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* ============================================================================
+   3. PERFORMANCE OPTIMIZATIONS
+   ============================================================================ */
+
+/* Optimize animations */
+* {
+  will-change: auto !important;
+}
+
+/* Critical path optimization */
+.main-content {
+  contain: layout style paint;
+}
+
+
+/* ============================================================================
+   4. BASE & RESET STYLES
+   ============================================================================ */
+
+/* No base styles defined yet */
+
+
+/* ============================================================================
+   5. LAYOUT COMPONENTS
+   ============================================================================ */
+
+/* Index page content wrapper */
+.collection-type-index .content-inner.has-content,
+.collection-type-index.title--description-position-under-image .content-inner {
+  padding: 50px 8%;
+}
+
+
+/* ============================================================================
+   6. NAVIGATION
+   ============================================================================ */
+
+.main-nav ul li a {
+  color: #fff;
+  font-family: proxima-nova;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: .1em;
+  text-decoration: none;
+  line-height: 2em;
+}
+
+
+/* ============================================================================
+   7. TYPOGRAPHY
+   ============================================================================ */
+
+h1.page-title {
+  color: #ffffff;
+}
+
+.product-title {
+  color: #222;
+}
+
+.sqs-block-html .sqs-block-content {
+  font-size: 18px;
+}
+
+
+/* ============================================================================
+   8. BUTTONS & CTAs
+   ============================================================================ */
+
+.block {
+  display: block;
+  width: 50%;
+  border: none;
+  background-color: #0d51a1;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+}
+
+.block:hover {
+  background-color: #252525;
+  color: #fff;
+  white-space: pre-wrap;
+}
+
+
+/* ============================================================================
+   9. PRODUCT COMPONENTS
+   ============================================================================ */
+
+/* Hide product prices */
+.product-price {
+  display: none !important;
+}
+
+.product-price .sqs-money-native {
+  display: none;
+}
+
+/* Hide add to cart button on product collection pages */
+.collection-type-products .sqs-add-to-cart-button-wrapper {
+  display: none;
+}
+
+/* Hide quantity input */
+.product-quantity-input {
+  display: none;
+}
+
+
+/* ============================================================================
+   10. SUMMARY BLOCKS
+   ============================================================================ */
+
+/* Hide metadata on summary blocks */
+.sqs-block-summary-v2 .summary-block-setting-primary-metadata-date .summary-metadata--primary .summary-metadata-item--date,
+.sqs-block-summary-v2 .summary-block-setting-primary-metadata-event-time .summary-metadata--primary .summary-metadata-item--event-time,
+.sqs-block-summary-v2 .summary-block-setting-primary-metadata-cats .summary-item-has-cats .summary-metadata--primary .summary-metadata-item--cats,
+.sqs-block-summary-v2 .summary-block-setting-primary-metadata-tags .summary-item-has-tags .summary-metadata--primary .summary-metadata-item--tags,
+.sqs-block-summary-v2 .summary-block-setting-primary-metadata-author .summary-item-has-author .summary-metadata--primary .summary-metadata-item--author,
+.sqs-block-summary-v2 .summary-block-setting-primary-metadata-comments .summary-item-has-comments-enabled .summary-metadata--primary .summary-metadata-item--comments,
+.sqs-block-summary-v2 .summary-block-setting-primary-metadata-location .summary-item-has-location .summary-metadata--primary .summary-metadata-item--location {
+  display: none;
+}
+
+
+/* ============================================================================
+   11. PAGE-SPECIFIC STYLES
+   ============================================================================ */
+
+/* ------------------------------------
+   Home Page
+   ------------------------------------ */
+
+/* Fixed Reviews Tab */
+.bhj-reviews-tab {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 9999;
+}
+
+.bhj-reviews-tab a {
+  display: block;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  background: var(--bhj-tab-bg);
+  color: var(--bhj-tab-text);
+  padding: 12px 10px;
+  border-radius: 8px 0 0 8px;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: .02em;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .18);
+  opacity: .85;
+  transition: opacity .2s ease, transform .2s ease;
+}
+
+.bhj-reviews-tab a:hover,
+.bhj-reviews-tab a:focus {
+  opacity: 1;
+  transform: translateX(-2px);
+}
+
+/* ------------------------------------
+   About Us Page
+   ------------------------------------ */
+
+/* CTA Block */
+div#block-yui_3_17_2_1_1758995908845_3072 {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+
+/* ============================================================================
+   12. FOOTER
+   ============================================================================ */
+
+#footer {
+  width: 100%;
+  background-color: #003057;
+  position: relative;
+}
+
+.footer-wrapper,
+.footer-wrapper a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer-wrapper a:hover {
+  color: #1681c4;
+}
+
+
+/* ============================================================================
+   13. UTILITIES
+   ============================================================================ */
+
+/* Google Maps clipping */
+.gmap {
+  overflow: hidden;
+  clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0% 100%);
+}
+
+
+/* ============================================================================
+   14. MEDIA QUERIES
+   ============================================================================ */
+
+/* ------------------------------------
+   Mobile & Tablet (max-width: 768px)
+   ------------------------------------ */
+
+@media only screen and (max-width: 768px) {
+  /* Typography adjustments */
+  .page-desc p {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+
+  .title--description-alignment-center .title-desc-wrapper .page-desc p {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .sqs-block-content p {
+    font-size: 18px;
+  }
+
+  .sqs-block-content button {
+    font-size: 22px;
+  }
+
+  #productList .product .product-title {
+    font-size: 18px;
+  }
+
+  /* Form adjustments */
+  .form-wrapper .form-button-wrapper--align-left {
+    margin-top: 15px;
+  }
+
+  /* Reviews tab mobile adjustments */
+  .bhj-reviews-tab {
+    top: auto;
+    bottom: 22%;
+  }
+
+  .bhj-reviews-tab a {
+    padding: 10px 8px;
+    font-size: 12px;
+  }
+}
+
+/* ------------------------------------
+   Accessibility - Reduced Motion
+   ------------------------------------ */
+
+@media (prefers-reduced-motion: reduce) {
+  .bhj-reviews-tab a {
+    transition: none;
+  }
+}
